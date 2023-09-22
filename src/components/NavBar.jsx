@@ -18,19 +18,19 @@ const NavBar = () => {
         <MenuList>
         
             <MenuItem>
-                <Link to = {`/categoria/${'A'}`}> 
+                <Link to = {`/categorias/${'A'}`}> 
                     Peliculas A 
                 </Link>
             </MenuItem>
             
             <MenuItem> 
-                <Link to = {`/categoria/${'B'}`}> 
+                <Link to = {`/categorias/${'B'}`}> 
                     Peliculas B
                 </Link>
             </MenuItem>
             
             <MenuItem> 
-                <Link to = {`/categoria/${'C'}`}> 
+                <Link to = {`/categorias/${'C'}`}> 
                     Peliculas C
                 </Link> 
             </MenuItem>
@@ -48,7 +48,7 @@ const NavBar = () => {
     <Spacer />
     <Box p='4'>
         <Link to = {"/cart"}>
-        <CartWidget/>   
+            <CartWidget/>   
         </Link> 
     </Box>
     </Flex>

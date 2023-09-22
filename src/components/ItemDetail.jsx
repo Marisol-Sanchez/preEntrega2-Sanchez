@@ -8,10 +8,9 @@ const ItemDetail = ({productos}) => {
 
     const filteredProducts = productos.filter((producto) => producto.id == id)
 
-
   return (
     <div>
-        {productos.map((p) => {
+        {filteredProducts.map((p) => {
             return (
                 <div key= {p.id}>
                     <Center p= '1rem'>
@@ -20,10 +19,11 @@ const ItemDetail = ({productos}) => {
                                 <Heading size= 'md'>{p.name} </Heading>
                             </CardHeader>
                             <CardBody>
-                                <Text> {p.name} </Text>
-                                <Text> {p.descripcion} </Text>
-                                <Text> {p.categoria} </Text>
-                                <Text> {p.precio} </Text>
+                                
+                                <Text> Precio: ${p.price} </Text>
+                                <Text> Descripcion: {p.descripcion} </Text>
+                                <Text> Categoria: {p.categoria} </Text>
+
                             </CardBody>
                             <CardFooter>
                                 
